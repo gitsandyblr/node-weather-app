@@ -22,7 +22,9 @@ const forecast = (longitude, latitude, callback) => {
         body.daily.data[0].summary +
           "It is currently " +
           body.currently.temperature +
-          " out there with " + body.currently.precipProbability + "% of rain"
+          " out there with " + body.currently.precipProbability + "% of rain." +
+          "Temperature can go upto " +  body.currently.temperatureHigh + " and come down to " + body.currently.temperatureLow
+
       );
     }
   });
